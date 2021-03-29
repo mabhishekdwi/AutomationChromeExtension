@@ -1,0 +1,26 @@
+{
+  "name": "ADx",
+  "description": "My Chrome extension",
+  "version": "1.0",
+  "manifest_version": 2,
+  "permissions": [
+    "activeTab",
+    "<all_urls>",
+     "storage",
+     "contextMenus",
+     "storage"
+   
+  ],
+  "content_scripts": [
+    {
+      "run_at": "document_end",
+      "matches": [ "<all_urls>" ],
+      "js": ["app/src/InsertHtml.js","app/src/content.js" ],
+      "css": ["app/src/contextMenu.css"]
+    }
+  ],
+  "browser_action": {
+    "default_title": "Click to view Pop Up",
+    "default_popup": "popup.html"
+  }
+}

@@ -1,0 +1,118 @@
+<html><head>
+    <meta charset="utf-8">
+    <title>ADx </title>  
+    <style type="text/css">.multipane { display: flex; } .multipane.layout-h { flex-direction: column; } .multipane.layout-v { flex-direction: row; } .multipane > div { position: relative; z-index: 1; } .multipane-resizer { display: block; position: relative; z-index: 2; } .layout-h > .multipane-resizer { width: 100%; height: 10px; margin-top: -10px; top: 5px; cursor: row-resize; } .layout-v > .multipane-resizer { width: 10px; height: 100%; margin-left: -10px; left: 5px; cursor: col-resize; } </style><style type="text/css"></style><script async="" charset="utf8"></script><style type="text/css">
+.tr-code-preview{background:#fff;box-shadow:0 1px 1px rgba(0,0,0,0.1);height:36px;line-height:2.6;position:fixed;width:100%
+}
+.tr-code-content{background:#f8f8f8;height:100%;padding:0 10px
+}
+.tr-preview-title{padding:0px 10px;font-weight:bold
+}
+.tr-preview-title svg{font-size:14px;height:20px;position:relative;top:5px;width:20px;margin-right:5px;color:darkslategrey
+}
+#siteUrl{white-space:nowrap;overflow:scroll;padding:2px;overflow-x:hidden
+}
+#codePreview{overflow-wrap:break-word;word-wrap:break-word;height:100%;margin:0px;margin-top:24px
+}
+.tr-step-action{position:absolute;right:7px
+}
+.tr-step{height:32px;padding:4px 10px;margin-bottom:5px;background:#fff;border-radius:3px
+}
+.tr-step-icon{height:14px;margin-top:4px;color:#455a64
+}
+.tr-event-type{font-weight:bold;line-height:1.9
+}
+.handle{cursor:pointer
+}
+.custom-resizer{width:100%;height:1000px
+}
+.custom-resizer>.pane{text-align:left;overflow:hidden;background:#eee;border:1px solid #ccc
+}
+.custom-resizer>.multipane-resizer{margin:0;left:0;position:relative
+}
+.custom-resizer>.multipane-resizer:before{display:block;content:"";width:2px;height:40px;position:absolute;top:50%;left:50%;margin-top:-20px;margin-left:-1.5px;border-left:1px solid #ccc;border-right:1px solid #ccc
+}
+.custom-resizer>.multipane-resizer:hover:before{border-color:#999
+}
+.trRecorderMenu{font-size:12px;height:36px;line-height:35px;color:#fff;background:#455a64;position:fixed;width:calc(100% - 10px)
+}
+.tr-recorder-menu-item{padding:0 5px !important
+}
+.tr-recorder-action{color:rgba(255,255,255,0.7);border:none !important;font-size:14px;outline:none !important
+}
+.tr-recorder-action i{margin-right:5px
+}
+.tr-recorder-action:hover{color:#fff
+}
+.trRecorderLogo{width:25px;height:25px;float:left;position:relative;top:5px;left:6px;margin-right:13px
+}
+.blink{color:red;font-size:16px;animation:blinker 1.5s cubic-bezier(0.5, 0, 1, 1) infinite alternate
+}
+@keyframes blinker{
+from{opacity:1
+}
+to{opacity:0
+}
+}
+.ivu-collapse-content-box{padding:0px !important
+}
+.ivu-collapse-header{padding-left:10px !important
+}
+.trStepDesc{margin-left:10px;font-size:12px;color:black
+}
+</style><style type="text/css">
+.fa-icon{display:inline-block;fill:currentColor
+}
+.fa-flip-horizontal{transform:scale(-1,1)
+}
+.fa-flip-vertical{transform:scale(1,-1)
+}
+.fa-spin{animation:fa-spin 1s 0s infinite linear
+}
+.fa-inverse{color:#fff
+}
+.fa-pulse{animation:fa-spin 1s infinite steps(8)
+}
+@keyframes fa-spin{
+0%{transform:rotate(0)
+}
+100%{transform:rotate(360deg)
+}
+}</style>
+
+</head>
+  <body>
+    <div class="custom-resizer multipane layout-v">
+      <div class="pane" style="min-width: 30px; width: auto; max-width: 1400px;">
+        <ul class="trRecorderMenu ivu-menu ivu-menu-dark ivu-menu-horizontal">
+          <img src="chrome-extension://kcfcepneepanakckpfnfkjppffbikehl/icons/tesrupt_white.png" class="trRecorderLogo"> 
+          <span style="font-size: 16px;">Your Xpath is here!</span> 
+          <div class="pane" style="min-width: 30px; width: auto; max-width: 1400px;">
+            <textarea name="styled-textarea" id="w3review" style="width:280px;  ;height: 1000px;"></textarea>
+          </div>
+        </ul> 
+          <div style="min-width: 600px; padding: 10px; margin-top: 40px;">
+          </div></div>
+           <div class="multipane-resizer"></div> 
+           <div class="pane" style="min-width: 0px; width: auto; max-width: 1400px; flex-grow: 1;">
+            <div class="tr-code-preview ivu-layout-header" style="padding: 0px;"><div class="ivu-row">
+              <div class="tr-preview-title ivu-col ivu-col-span-4">
+                <svg role="presentation" width="16" height="12.8" viewBox="0 0 640 512" focusable="false" class="fa-icon"></svg>Page Object Class
+        </div> 
+        <div class="ivu-col ivu-col-span-4" style="max-width: 200px;">
+          <div tabindex="0" class="ivu-select ivu-select-single ivu-select-small">
+            <div class="ivu-select-selection"><input type="hidden" value="robot"> 
+               <span class="ivu-select-placeholder" style="display: none;">
+              </span> <span class="ivu-select-selected-value"></span> <!----> 
+              <i class="ivu-icon ivu-icon-ios-close ivu-select-arrow" style="display: none;"></i>
+               <i class="ivu-icon ivu-icon-arrow-down-b ivu-select-arrow"></i>
+              </div> 
+              <div class="ivu-select-dropdown" style="display: none;"><ul class="ivu-select-not-found" style="display: none;"></ul> <ul class="ivu-select-dropdown-list"><li class="ivu-select-item ivu-select-item-selected"></li></ul></div></div></div> <div class="ivu-col ivu-col-span-4" style="width: 300px;"><button type="button" class="ivu-btn ivu-btn-ghost ivu-btn-small"><!----> <i class="ivu-icon ivu-icon-clipboard"></i> <span>Convert To Page Object</span></button></div></div></div> <div class="tr-code-content ivu-layout-content"><pre id="codePreview" style="width: 1000px;">      <code class="robot hljs"></code>
+      </pre> <!----></div></div></div>
+      <script type="text/javascript" src="popup.js"></script>
+  
+  <div data-transfer="true" class="v-transfer-dom"><div class="ivu-modal-mask" style="display: none;"></div>
+   <div class="ivu-modal-wrap ivu-modal-hidden"><div class="ivu-modal" style="width: 520px; display: none;">
+    <div class="ivu-modal-content"><a class="ivu-modal-close"><i class="ivu-icon ivu-icon-ios-close-empty">
+     
+</body></html>
